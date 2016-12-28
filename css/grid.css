@@ -1,0 +1,101 @@
+/************* Grid *****************/
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main,
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px 0 15px;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+}
+
+
+/* Coloumn
+Reference: https://css-tricks.com/dont-overthink-it-grids/ */
+
+aside,
+article,
+[class*='col-'] {
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding: 0;
+}
+
+
+/* For devices larger than 400px */
+
+@media (min-width: 550px) {
+  main,
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+
+/* For devices larger than 550px */
+
+@media (min-width: 640px) {
+  main,
+  .container {
+    width: 80%;
+  }
+  .col-25 {
+    width: 25%;
+  }
+  .col-33,
+  aside {
+    width: 33.333333%;
+  }
+  .col-50 {
+    width: 50%;
+  }
+  .col-66,
+  article {
+    width: 66.666667%;
+  }
+  .col-100 {
+    width: 100%;
+  }
+}
+
+
+/* Add gutter to coloumn*/
+
+[class*='col-'],
+article {
+  padding-right: 20px;
+}
+
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+
+/************* Clear **************/
+
+main::after,
+.container::after,
+section::after,
+.row::after {
+  display: table;
+  content: "";
+  clear: both;
+}

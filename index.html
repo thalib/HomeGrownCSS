@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <title>Homegrown CSS template demo page</title>
+    <meta name="description" content="Fast and simple CSS template">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!--
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    -->
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/addon-header-footer.css">
+    <link rel="stylesheet" href="css/form.css">
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/favicon.png">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/homegrown.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <section>
+                <a class="topnav-logo" href="#" title="Company Tagline">
+                    <img class="img-logo" src="images/logo.png" alt="Company Tagline" width="120">
+                </a>
+                <a id="id_nav_button" class="topnav-icon" href="javascript:void(0);">☰</a>
+            </section>
+        </div>
+        <nav id="id_topnav">
+            <div class="container">
+                <section>
+                    <ul>
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </section>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <main>
+        <section>
+            <h1> Homegrown is a minimal CSS template for speed and simplicity </h1>
+        </section>
+        <section>
+            <article>
+                <section>
+                    <h3>Aside - 66% column</h3>
+                    <hr />
+                </section>
+                <section>
+                    <p>This is a paragraph: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                        Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <a href="http://www.lipsum.com">Source: http://www.lipsum.com</a>.</p>
+                </section>
+                <br />
+                <section>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+
+                    <!-- Base type size -->
+                    <p>paragraph</p>
+
+                    <!-- Other styled text tags -->
+                    <strong>Bolded</strong> <br />
+                    <em>Italicized</em> <br />
+                    <a href="#">Link</a> <br />
+                    <u>Underlined</u> <br />
+                </section>
+            </article>
+            <aside>
+                <section>
+                    <h3>Aside - 33% column</h3>
+                    <hr />
+                </section>
+            </aside>
+        </section>
+        <br />
+
+        <h2> Grid</h2>
+        <section>
+            <div class="col-33" style="background-color:green; color: #fff;">
+                <p> col-33% </p>
+            </div>
+            <div class="col-66" style="background-color:blue; color: #fff;">
+                <p> col-66% </p>
+            </div>
+        </section>
+        <br />
+
+        <section>
+            <div class="col-50" style="background-color:green; color: #fff;">
+                <p> col-50% </p>
+            </div>
+            <div class="col-50" style="background-color:blue; color: #fff;">
+                <p> col-50% </p>
+            </div>
+        </section>
+        <br />
+
+        <section>
+            <div class="col-66" style="background-color:green; color: #fff;">
+                <p> col-66% </p>
+            </div>
+            <div class="col-33" style="background-color:blue; color: #fff;">
+                <p> col-33% </p>
+            </div>
+        </section>
+        <br />
+
+        <section>
+            <div class="col-33" style="background-color:red; color: #fff;">
+                <p> col-33% </p>
+            </div>
+            <div class="col-33" style="background-color:green; color: #fff;">
+                <p> col-33% </p>
+            </div>
+            <div class="col-33" style="background-color:blue; color: #fff;">
+                <p> col-33% </p>
+            </div>
+        </section>
+        <br />
+
+        <section>
+            <div class="col-25" style="background-color:red; color: #fff;">
+                <p> col-25% </p>
+            </div>
+            <div class="col-25" style="background-color:green; color: #fff;">
+                <p> col-25% </p>
+            </div>
+            <div class="col-25" style="background-color:blue; color: #fff;">
+                <p> col-25% </p>
+            </div>
+            <div class="col-25" style="background-color:yellow; color: #000;">
+                <p> col-25% </p>
+            </div>
+        </section>
+
+        <br />
+        <section>
+            <div class="col-100" style="background-color:green; color: #fff;">
+                <p> col-100% </p>
+            </div>
+        </section>
+
+        <br />
+        <section>
+            <div class="col-100">
+                <h2>Responsive Image</h2>
+                <pre><code>Img src: http://pngimg.com/upload/coffee_beans_PNG9276.png</code></pre>
+                <br />
+            </div>
+            <div class="col-33">
+                <p> 33% </p>
+                <img src="images/coffee_beans.png">
+            </div>
+            <div class="col-66">
+                <p> 66% </p>
+                <img src="images/coffee_beans.png">
+            </div>
+        </section>
+
+        <br />
+        <section>
+            <h2>Forms</h2>
+            <form>
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+                <label for="exampleInputFile">File input</label>
+                <input type="file" id="exampleInputFile">
+
+                <label> <input type="checkbox"> Option 1 </label>
+                <label> <input type="checkbox"> Option 2 </label>
+                <label> <input type="checkbox"> Option 3 </label>
+                <label>
+                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      Option one
+                </label>
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Option two
+                </label>
+                <textarea class="form-control" rows="3"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <br />
+        <section>
+            <h2>Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br />
+        <section>
+            <h3>Ordered List</h3>
+            <ol>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit</li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+            </ol>
+
+        </section>
+        <br />
+        <section>
+            <h3>Unordered List</h3>
+
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Consectetur adipiscing elit</li>
+                <li>Integer molestie lorem at massa</li>
+                <li>Facilisis in pretium nisl aliquet</li>
+                <li>Nulla volutpat aliquam velit
+                    <ul>
+                        <li>Phasellus iaculis neque</li>
+                        <li>Purus sodales ultricies</li>
+                        <li>Vestibulum laoreet porttitor sem</li>
+                        <li>Ac tristique libero volutpat at</li>
+                    </ul>
+                </li>
+                <li>Faucibus porta lacus fringilla vel</li>
+                <li>Aenean sit amet erat nunc</li>
+                <li>Eget porttitor lorem</li>
+            </ul>
+        </section>
+        <hr />
+    </main>
+
+    <footer>
+        <div class="container">
+            <section>
+                <h3>footer</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                    book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </section>
+            <section>
+                <p>Your Copyright message goes here</p>
+            </section>
+        </div>
+    </footer>
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
