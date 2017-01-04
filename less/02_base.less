@@ -1,0 +1,149 @@
+@color_1: #222;
+@color_2: #fff;
+@font_family_1: 'Open Sans', Helvetica, Arial, sans-serif;
+@font_family_2: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+@background_color_1: transparent;
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+/***** More formating ***********/
+/*********Responsive Images************/
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* others like - hr, pre, code, etc..
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+	margin: 0;
+}
+html {
+	font-size: 10px;
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+}
+body {
+	width: 100%;
+	display: block;
+	font-size: 1.6rem;
+	font-weight: 400;
+	font-family: @font_family_1;
+	color: @color_1;
+}
+code {
+	font-family: @font_family_2;
+	color: @color_2;
+	background: #333;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+kbd {
+	font-family: @font_family_2;
+	color: @color_2;
+	background: #333;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+pre {
+	font-family: @font_family_2;
+	color: @color_2;
+	background: #333;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+	border-radius: 0.4rem;
+	padding: 10px;
+	margin: 10px 0 10px 0;
+}
+samp {
+	font-family: @font_family_2;
+	color: @color_2;
+	background: #333;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+img {
+	vertical-align: middle;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+img.img-logo {
+	margin: 10px 0 10px 0;
+	display: inline;
+}
+table {
+	display: table;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+	background-color: @background_color_1;
+	border: 1px solid #ddd;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+th {
+	padding: 8px;
+	text-align: left;
+	border: 1px solid #E1E1E1;
+}
+td {
+	padding: 8px;
+	text-align: left;
+	border: 1px solid #E1E1E1;
+}
+tr {
+	&:first-child {
+		th {
+			border-bottom-width: 2px;
+		}
+	}
+}
+ul {
+	list-style: circle inside;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 10px;
+	ul {
+		margin: 1.5rem 0 1.5rem 3rem;
+		font-size: 1em;
+	}
+	ol {
+		margin: 1.5rem 0 1.5rem 3rem;
+		font-size: 1em;
+	}
+}
+ol {
+	list-style: decimal inside;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 10px;
+	ol {
+		margin: 1.5rem 0 1.5rem 3rem;
+		font-size: 1em;
+	}
+	ul {
+		margin: 1.5rem 0 1.5rem 3rem;
+		font-size: 1em;
+	}
+}
+li {
+	margin-bottom: 1rem;
+}
+hr {
+	margin-top: 3rem;
+	margin-bottom: 3.5rem;
+	border-width: 0;
+	border-top: 1px solid #ddd;
+}
+
