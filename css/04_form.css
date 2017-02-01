@@ -25,6 +25,7 @@ textarea {
   padding-bottom: 6px;
 }
 
+input[type="submit"],
 button {
   display: inline-block;
   color: #fff;
@@ -45,6 +46,7 @@ button {
   box-shadow: none !important;
 }
 
+input[type="submit"]:hover,
 button:hover {
   color: #fff;
   background-color: #286090;

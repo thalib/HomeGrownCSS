@@ -31,13 +31,6 @@
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/addon-header-footer.css">
     <link rel="stylesheet" href="css/addon-user.css">
-
-
-
-    <!-- JS Scripts  -->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="js/homegrown.js" async></script>
-
 </head>
 
 <body>
@@ -65,7 +58,6 @@
         </nav>
 
     </header>
-
 
     <!-- Primary Page Layout
  -->
@@ -319,8 +311,25 @@
         </div>
     </footer>
 
-    <!-- End Document
- -->
+    <script type="text/javascript">
+        var button = document.querySelector('#id_nav_button');
+        button.addEventListener('click', function(event) {
+            var menu = document.querySelector('#id_topnav');
+            if (!menu.getAttribute("style")) {
+                menu.style.display = "block";
+            } else if (menu.style.display == "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        });
+    </script>
+
+    <!-- [Or] inline JS Scripts like below
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="js/homegrown.js" async></script>  -->
+
+    <!-- End Document -->
 </body>
 
 </html>

@@ -6,13 +6,13 @@ echo 'Create dist/'
 mkdir -p dist
 
 echo 'Concate CSS files: dist/hg.css'
-cat css/normalize.css \
-css/base.css \
-css/grid.css \
-css/typography.css \
-css/form.css \
-css/addon-header-footer.css \
-css/addon-user.css \
+cat css/00_normalize.css \
+css/01_base.css \
+css/02_grid.css \
+css/03_typography.css \
+css/04_form.css \
+css/05_header-footer.css \
+css/06_misc.css \
 > dist/hg.css
 
 echo 'Minifiy CSS: dist/hg.css > dist/hg.min.css'
