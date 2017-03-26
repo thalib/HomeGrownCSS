@@ -768,7 +768,8 @@ textarea {
 }
 
 input[type="submit"],
-button {
+button,
+.button {
   display: inline-block;
   color: #fff;
   background-color: #337ab7;
@@ -789,7 +790,8 @@ button {
 }
 
 input[type="submit"]:hover,
-button:hover {
+button:hover,
+.button:hover {
   color: #fff;
   background-color: #286090;
   border-color: #204d74;
@@ -889,6 +891,10 @@ footer li {
 footer a,
 footer a:hover {
   color: #fff;
+}
+
+footer a {
+  color: #fff;
   text-decoration: none;
 }
 /****** Misc *********/
@@ -944,3 +950,5 @@ footer a:hover {
 .bg-lred { background-color:  #DD4B39; }
 .bg-lblue { background-color:  #35a2f4; }
 .bg-green { background-color:  #2ecc71; }
+
+.fluid { width: 100%; }

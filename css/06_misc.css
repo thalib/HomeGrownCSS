@@ -51,3 +51,5 @@
 .bg-lred { background-color:  #DD4B39; }
 .bg-lblue { background-color:  #35a2f4; }
 .bg-green { background-color:  #2ecc71; }
+
+.fluid { width: 100%; }
