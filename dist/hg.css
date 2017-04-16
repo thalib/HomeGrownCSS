@@ -533,6 +533,24 @@ li {
   margin-bottom: 1rem;
 }
 
+/* Simple table look like list */
+ul.list,
+ol.list {
+  
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}
+
+ul.list {
+  list-style-type: none;
+}
+
+ul.list li,
+ol.list li {
+  padding: 1rem 0 1rem 0;
+  border-bottom: 1px dotted #333;
+}
 
 /* others like - hr, pre, code, etc..
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -886,6 +904,7 @@ footer ul {
 
 footer li {
   display: inline-block;
+  padding: 0 1rem 0 0;
 }
 
 footer a,
@@ -924,7 +943,7 @@ footer a {
 
 .tag {
   display: inline;
-  padding: .2em .6em .3em;
+  padding: .1em .3em .1em;
   margin: .1em;
   line-height: 2;
   text-align: center;
@@ -934,6 +953,7 @@ footer a {
   text-transform: uppercase;
   background-color: #286090;
   color: #fff;
+
 }
 
 .tag:hover,
