@@ -44,6 +44,7 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #1EAEDB;
+  word-wrap:break-word;
 }
 a:hover {
   color: #0FA0CE;
