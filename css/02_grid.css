@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-main,
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -19,18 +18,10 @@ main,
   box-sizing: border-box;
 }
 
-main {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-}
-
 
 /* Coloumn
 Reference: https://css-tricks.com/dont-overthink-it-grids/ */
 
-aside,
-article,
 [class*='col-'] {
   float: left;
   width: 100%;
@@ -43,7 +34,6 @@ article,
 /* For devices larger than 400px */
 
 @media (min-width: 550px) {
-  main,
   .container {
     width: 85%;
     padding: 0;
@@ -54,7 +44,6 @@ article,
 /* For devices larger than 550px */
 
 @media (min-width: 640px) {
-  main,
   .container {
     width: 80%;
   }
@@ -89,6 +78,16 @@ article,
 
 
 /************* Clear **************/
+
+/* Reset **/
+main,
+aside,
+article,
+main {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
 
 main::after,
 .container::after,

@@ -66,6 +66,10 @@ header .topnav-icon {
   }
 }
 
+img.logo {
+  margin: 10px 0 10px 0;
+  display: inline;
+}
 
 /**************** footer **********************/
 
