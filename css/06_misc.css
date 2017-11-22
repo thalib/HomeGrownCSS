@@ -47,10 +47,12 @@
 
 
 [class*='bg-'] { color: #fff; }
-.bg-red { background-color: #a94442; }
-.bg-blue { background-color: #286090; }
-.bg-lred { background-color:  #DD4B39; }
-.bg-lblue { background-color:  #35a2f4; }
-.bg-green { background-color:  #2ecc71; }
+.bg-red { background-color: #a94442 !important; }
+.bg-blue { background-color: #286090 !important; }
+.bg-lred { background-color:  #DD4B39 !important; }
+.bg-lblue { background-color:  #35a2f4 !important; }
+.bg-green { background-color:  #2ecc71 !important; }
 
 .fluid { width: 100%; }
+
+.hide { display: none; }
